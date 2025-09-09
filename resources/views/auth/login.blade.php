@@ -26,6 +26,10 @@
 
             <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
+
+        <div class="mt-3 text-center">
+            <a href="{{ route('register') }}">Nemáte účet? Zaregistrujte se</a>
+        </div>
     </div>
 </div>
 @endsection

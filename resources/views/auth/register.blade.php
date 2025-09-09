@@ -40,6 +40,10 @@
 
             <button type="submit" class="btn btn-success w-100">Register</button>
         </form>
+
+        <div class="mt-3 text-center">
+            <a href="{{ route('login') }}">Máte účet? Přihlaste se</a>
+        </div>
     </div>
 </div>
 @endsection

@@ -16,7 +16,7 @@
             <span>Přečtené stránky</span><strong>{{ $monthlyPages }}</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Průměrná rychlost</span><strong>{{ $monthlySpeed }} str./hod</strong>
+            <span>Průměrná rychlost</span><strong>{{ $monthlySpeed }} str./min</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Počet čtených knih</span><strong>{{ $monthlyBooksCount }}</strong>
@@ -25,10 +25,10 @@
             <span>Počet čtení (záznamů)</span><strong>{{ $monthlyReadingsCount }}</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Nejrychlejší rychlost</span><strong>{{ $fastestMonthlySpeed }} str./hod</strong>
+            <span>Nejrychlejší rychlost</span><strong>{{ $fastestMonthlySpeed }} str./min</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Nejpomalejší rychlost</span><strong>{{ $slowestMonthlySpeed }} str./hod</strong>
+            <span>Nejpomalejší rychlost</span><strong>{{ $slowestMonthlySpeed }} str./min</strong>
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@
             <span>Přečtené stránky</span><strong>{{ $weeklyPages }}</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Průměrná rychlost</span><strong>{{ $weeklySpeed }} str./hod</strong>
+            <span>Průměrná rychlost</span><strong>{{ $weeklySpeed }} str./min</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Počet čtených knih</span><strong>{{ $weeklyBooksCount }}</strong>
@@ -54,10 +54,10 @@
             <span>Počet čtení (záznamů)</span><strong>{{ $weeklyReadingsCount }}</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Nejrychlejší rychlost</span><strong>{{ $fastestWeeklySpeed }} str./hod</strong>
+            <span>Nejrychlejší rychlost</span><strong>{{ $fastestWeeklySpeed }} str./min</strong>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Nejpomalejší rychlost</span><strong>{{ $slowestWeeklySpeed }} str./hod</strong>
+            <span>Nejpomalejší rychlost</span><strong>{{ $slowestWeeklySpeed }} str./min</strong>
           </li>
         </ul>
       </div>
