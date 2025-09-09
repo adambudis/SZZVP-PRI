@@ -39,7 +39,7 @@ SZZVP-PRI/
 |
 ├─ screenshots/        ← sreenshoty z aplikace
 |
-├─ .env                ← konfigurace prostředí
+├─ .env.example        ← konfigurace prostředí
 └─ README.md
 ```
 
