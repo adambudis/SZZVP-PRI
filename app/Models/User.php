@@ -13,20 +13,17 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
+     * Atributy, které je možné hromadně přiřadit (např. v `create()`).
      */
     protected $fillable = [
         'name',
         'email',
         'password',
+        'favorite_genre',
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var list<string>
+     * Atributy, které budou skryté v serializaci (např. JSON).
      */
     protected $hidden = [
         'password',
@@ -34,15 +31,20 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
+     * Atributy, které se převedou na jiné datové typy.
      */
-    protected function casts(): array
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+
+
+    public function books()
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        return $this->hasMany(Book::class);
+    }
+
+    public function readings()
+    {
+        return $this->hasMany(Reading::class);
     }
 }
